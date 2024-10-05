@@ -1,0 +1,131 @@
+body{
+    background-color: antiquewhite;
+    padding: 0%;
+    margin: 0%;
+}
+
+header{
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    height: 20vh;
+}
+
+#navbar{
+    background-color: rgb(255, 162, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3em;
+    border-radius: 20px;
+    font-size: 1.3rem;
+    position: sticky;
+}
+
+#stackLeftNav{
+    display: flex;
+    align-items: center;
+    padding-left: 0.5rem;
+}
+
+.menu{
+    padding-right: 0.5rem;
+}
+
+#logo{
+    width: 50px;
+    border-radius: 10px;
+}
+
+#headerTitle{
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+#menu-item{
+    display: inline-flex;
+    margin-left: 2em;
+    text-decoration: none;
+    color: black;
+}
+
+#menu-item:hover{
+    text-decoration: underline;
+}
+
+/* ======================================================================= */
+
+#section1{
+    height: 80vh;
+    display: inline-flex;
+    width: 100%;
+}
+
+#leftBox{
+    width: 50%;
+    overflow: hidden;
+}
+
+#stackLeft1{
+    padding-left: 8rem;
+    padding-right: 1rem;
+    align-items: center;
+    animation: slide2 1.5s ease 0s 1 normal forwards;
+}
+
+#sec1Title{
+    font-size: 3rem;
+}
+
+#sec1Par{
+    font-size: 1.1rem;
+}
+
+#sec1Button{
+    width: 7rem;
+    height: 2rem;
+    border-radius: 5px;
+    border: none;
+    background-color: black;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer; 
+}
+
+#sec1Button:hover{
+    background-color: hsl(0, 0%, 20%);
+}
+
+#rightbox{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow:hidden;
+}
+
+#woodworking{
+    height: 90%;
+    width: 100%;
+    animation: slide 1.5s ease 0s 1 normal forwards;
+}
+
+@keyframes slide {
+    0%{
+        translate: 100% 0%;
+    }
+    100%{
+        margin-right: 0rem;
+    }
+}
+
+@keyframes slide2 {
+    0%{
+        translate: -100% 0%;
+    }
+    100%{
+        margin-right: 0rem;
+    }
+}
