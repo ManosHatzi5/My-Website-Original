@@ -1,5 +1,5 @@
 body{
-    background-color: antiquewhite;
+    background-color: hsl(23, 42%, 88%);
     padding: 0%;
     margin: 0%;
 }
@@ -13,7 +13,7 @@ header{
 }
 
 #navbar{
-    background-color: rgb(255, 162, 0);
+    background-color: hsl(34, 51%, 97%);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,10 +49,11 @@ header{
     margin-left: 2em;
     text-decoration: none;
     color: black;
+    font-size: 0.9em;
 }
 
 #menu-item:hover{
-    text-decoration: underline;
+    text-decoration: underline black 0.1em;
 }
 
 /* ======================================================================= */
@@ -91,7 +92,7 @@ header{
     background-color: black;
     color: white;
     margin-top: 10px;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 #sec1Button:hover{
@@ -128,4 +129,82 @@ header{
     100%{
         margin-right: 0rem;
     }
+}
+/* ============================================================== */
+
+footer{
+    display: flex;
+    padding: 3%;
+}
+
+.box{
+    background-color: hsl(34, 51%, 97%);
+    border-radius: 0.5em;
+    width: 25%;
+    margin: 1.5%;
+    text-align: left;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+#footerTitle{
+    text-align: center;
+    max-width: 100%;
+}
+
+#footerTitle:hover{
+    cursor: pointer;
+}
+
+#box1{
+    align-items: center;
+}
+
+#footerLogo{
+    max-width: 100%;
+}
+
+#footerLogo:hover{
+    cursor: pointer;
+}
+
+#stackFooterNav{
+    list-style-type: none;
+    padding-left: 0%;
+}
+
+#list{
+    padding-bottom: 0.5em;
+}
+
+.footerNav{
+    text-decoration: none;
+    color: black;
+}
+
+.footerNav:hover{
+    text-decoration: underline black;
+}
+
+#contactLink{
+    text-decoration: none;
+    color: black;
+}
+
+#contactLink:hover{
+    text-decoration: underline black;
+}
+
+#socialLink{
+    text-decoration: none;
+    color: black;
+}
+
+#socialLink:hover{
+    text-decoration: underline black;
+}
+
+h3{
+    color: gray;
+    font-weight: lighter;
 }
