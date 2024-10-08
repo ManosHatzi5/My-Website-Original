@@ -205,6 +205,6 @@ footer{
 }
 
 h3{
-    color: gray;
+    color: hsl(0, 0%, 52%);
     font-weight: lighter;
 }
