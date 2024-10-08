@@ -9,7 +9,7 @@ header{
     padding-right: 3em;
     padding-top: 1em;
     padding-bottom: 1em;
-    height: 20vh;
+    height: 15vh;
 }
 
 #navbar{
@@ -56,81 +56,77 @@ header{
     text-decoration: underline black 0.1em;
 }
 
-/* ======================================================================= */
+/* ========================================================= */
 
 #section1{
     height: 80vh;
-    display: inline-flex;
-    width: 100%;
+    display: flex;
 }
 
 #leftBox{
-    width: 50%;
-    overflow: hidden;
+    width: 60%;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
 }
 
-#stackLeft1{
-    padding-left: 8rem;
-    padding-right: 1rem;
-    align-items: center;
-    animation: slide2 1.5s ease 0s 1 normal forwards;
-}
-
-#sec1Title{
-    font-size: 3rem;
-}
-
-#sec1Par{
-    font-size: 1.1rem;
-}
-
-#sec1Button{
-    width: 7rem;
-    height: 2rem;
-    border-radius: 5px;
-    border: none;
-    background-color: black;
-    color: white;
-    margin-top: 10px;
-    cursor: pointer;
-}
-
-#sec1Button:hover{
-    background-color: hsl(0, 0%, 20%);
+#rightbox img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    animation: slide2 2s ease 0s 1 normal forwards;
 }
 
 #rightbox{
-    width: 45%;
+    width: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow:hidden;
+    padding-right: 3em;
+    overflow: hidden;
 }
 
-#woodworking{
-    height: 90%;
-    width: 100%;
-    animation: slide 1.5s ease 0s 1 normal forwards;
+#section1 h1{
+    font-size: 3em;
+    animation: slide 2s ease 0s 1 normal forwards;
+}
+
+#section1 h3{
+    font-size: 1.5em;
+    animation: slide 1.5s ease 0.5s 1 normal forwards;
+}
+
+#section1 p{
+    font-size: 1.1em;
+    line-height: 1.4em;
+    animation: slide 1.5s ease 0.7s 1 normal forwards;
+}
+
+#stack{
+    visibility: hidden;
 }
 
 @keyframes slide {
     0%{
-        translate: 100% 0%;
+        translate: -80% 0%;
     }
     100%{
-        margin-right: 0rem;
+        translate: 0% 0%;
+        visibility: visible;
     }
 }
 
 @keyframes slide2 {
     0%{
-        translate: -100% 0%;
+        translate: 100% 0%;
     }
     100%{
-        margin-right: 0rem;
+        translate: 0% 0%;
+        visibility: visible;
     }
 }
-/* ============================================================== */
+/* ==================================================== */
 
 footer{
     display: flex;
@@ -204,7 +200,7 @@ footer{
     text-decoration: underline black;
 }
 
-h3{
+footer h3{
     color: hsl(0, 0%, 52%);
     font-weight: lighter;
 }
